@@ -1,1 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page</title>
+  </head>
+  <body>
+Team Name: <%= @team.name %> <br>
+Team Motto: <%= @team.motto %> <br>
+<% @team.members.each do |array| %>
+Hero Name: <%= array[:name] %> <br>
+Hero Power: <%= array[:power] %> <br>
+Hero Biography: <%= array[:biography] %> <br>
+<%end %>
 
+
+  </body>
+</html>
